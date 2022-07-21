@@ -1,7 +1,7 @@
 import React from "react";
 
-export function Footer(){
+export function Footer(props){              // pode ser passado "{texto}"
     return(
-        <footer>Foorter</footer>
+        <footer>{props.texto}</footer>      // e recebido como "{texto}"
     )
 }
