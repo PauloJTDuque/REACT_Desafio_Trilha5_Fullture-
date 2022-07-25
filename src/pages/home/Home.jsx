@@ -1,24 +1,28 @@
-import { Footer } from "../components/Footer";
-import { Cards } from "../components/Cards";
+import { Footer } from "../../components/footer/Footer";
+import { Cards } from "../../components/cards/Cards";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Pai, Parte1, Parte2, Titulo } from "./HomeStyle";
 
 export function Home(){
 
-    const [imagens, setImagens] = useState();
+    const [imagens, setImagens] = useState("Div da imagem");
+    const[cor, setCor] = useState("#1316cb")
 
     useEffect(()=>{
-
+        setImagens("Novo valor")
     },[])
 
     return(
-        <div>
-            <div> Div da Imagem</div>
-            <div> 
-                <h2>Filmes Populares `(div dos cards)`</h2>
+        <Pai >
+            <div className="imagemInicial"> {imagens}</div>
+            <Parte1> 
+                <h2>Filmes Populares</h2>
+            </Parte1>
+            <Parte2>
                 <Cards/>
-            </div>
+            </Parte2>
             <Footer texto="FULLFLIX 2022, Todos os direitos reservados. |"/>
-        </div>
+        </Pai>
     )
 }
