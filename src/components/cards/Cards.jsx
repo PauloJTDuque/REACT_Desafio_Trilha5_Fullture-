@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { Pegarfilmes } from "../assets/api/api";
+import { Pegarfilmes } from "../../assets/api/api";
 import { Container } from "./CardsStyle";
 
 export function Cards(){

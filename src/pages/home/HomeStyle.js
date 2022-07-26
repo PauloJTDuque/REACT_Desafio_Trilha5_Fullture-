@@ -20,6 +20,10 @@ export const Pai = styled.div`
         background-image: url(${imagemBg});
         background-position: center;
         background-repeat: no-repeat; 
+        background-size: cover;
+        /* background-color: red;
+        z-index: 1;
+        opacity: 0,8; */
     }
 `
 
@@ -30,6 +34,6 @@ export const Parte2 = styled.div`
   height: fit-content;
   min-height: 90vh;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  color: white;
+  color: black;
   `
    
