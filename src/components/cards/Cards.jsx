@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Pegarfilmes } from "../../assets/api/api";
 import { Container } from "./CardsStyle";
+import {Grid} from "./CardsStyle"
 
 export function Cards(){
 
@@ -23,6 +24,7 @@ export function Cards(){
                                 src={`https://image.tmdb.org/t/p/w500/${filme.poster_path}`}
                                 alt={filme.title}
                             />
+                           {/* Inserir DIV */}
                             <h4>{filme.title}</h4>    
                             <h4>{filme.vote_average}</h4> 
                         </Container> 
