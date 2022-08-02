@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { Pegarfilmes } from "../../assets/api/api";
-import { Container } from "./CardsStyle";
-import {Grid} from "./CardsStyle"
+import { Container, Grid } from "./CardsStyle";
+
 
 export function Cards(){
 
@@ -13,8 +13,8 @@ export function Cards(){
     },[])
 
     return(
-        <Grid>
-            <div>
+        <Grid to="/detalhe">
+            
                 {!filmes ? "loading" :   // Se não houver conteúdo em "filme" escreve loading na tela. Se houver, entra no MAP
                 <>                               
                     {filmes.map((filme)=>{
@@ -23,15 +23,17 @@ export function Cards(){
                             <img
                                 src={`https://image.tmdb.org/t/p/w500/${filme.poster_path}`}
                                 alt={filme.title}
+                                id={filme.id}
                             />
-                           {/* Inserir DIV */}
-                            <h4>{filme.title}</h4>    
-                            <h4>{filme.vote_average}</h4> 
+                            <div className="infoContainer" id={filme.id}>
+                                <h4>Título: {filme.title}</h4>
+                                <h4>Nota: {filme.vote_average}</h4>
+                            </div>
                         </Container> 
                     );  
                     })}
                 </>}
-            </div>
+           
         </Grid>    
     );
 }

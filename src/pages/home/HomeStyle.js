@@ -12,15 +12,16 @@ export const Parte1 = styled.h2`
   h2{
     margin: 0 0 0 2vw;        // top, right, bottom, left = > sentido horário
   }
-  `
+`
 
 export const Pai = styled.div`
     .imagemInicial{
         height: 100vh;
         background-image: url(${imagemBg});
         background-position: center;
+        background-size: cover; 
+
         /* background-repeat: no-repeat; 
-        background-size: cover; */
         /* background-color: red;
         z-index: 1;
         opacity: 0,8; */
@@ -35,7 +36,8 @@ export const Parte2 = styled.div`
     align-items: center;
     height: fit-content;
     min-height: 90vh;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    //max-height: 120vh;
+//    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     color: white;
   `
    
