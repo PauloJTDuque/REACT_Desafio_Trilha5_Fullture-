@@ -32,8 +32,7 @@ export function Cards(){
                         </Container> 
                     );  
                     })}
-                </>}
-           
+                </>}         
         </Grid>    
     );
 }

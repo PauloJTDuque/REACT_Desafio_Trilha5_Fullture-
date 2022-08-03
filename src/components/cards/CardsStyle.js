@@ -1,5 +1,5 @@
 import styled from "styled-components";
-//import {Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 export const Container = styled.div`
 display: flex;
@@ -31,13 +31,14 @@ img{
 }
 `
 
-export const Grid = styled.div`
+export const Grid = styled(Link)` //vem link
     display: grid;
     justify-content: center;
     align-items: center;
     min-height: 20vh;
     padding: 10vh 0;
-    width: 80%;
+    width: 80%;  // Usando 80% da largura disponível
     gap: 2vw;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))  //Tamanho do Card 300px
+                                                                                            //    
 `
