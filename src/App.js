@@ -1,12 +1,12 @@
-
-import { Home } from "./pages/home/Home.jsx";
+//import { RouterDom } from "./assets/"
+// import { Home } from "./pages/home/Home.jsx";
 
 
 
 function App() {
   return (
     <div >
-      <Home/>
+      <RouterDom/>
 
 
     </div>
