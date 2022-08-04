@@ -1,7 +1,7 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import { Footer } from "../../components/footer/Footer";
+import { Header } from "../../components/header/Header";
 
-export function Details(){
+export default function Details(){
     return(
         <div>
             <Header/>

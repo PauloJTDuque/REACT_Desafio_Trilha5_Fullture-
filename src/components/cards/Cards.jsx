@@ -13,7 +13,7 @@ export function Cards(){
     },[])
 
     return(
-        <Grid to="/detalhe">
+        <Grid to="/details">
             
                 {!filmes ? "loading" :   // Se não houver conteúdo em "filme" escreve loading na tela. Se houver, entra no MAP
                 <>                               
