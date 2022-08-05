@@ -1,16 +1,22 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Pegarfilmes } from "../../assets/api/api";
+import { goToDetail } from "../../assets/redux/slice";
 import { Container, Grid } from "./CardsStyle";
+
 
 
 export function Cards(){
 
     const [filmes, setFilmes] = useState();
+    const[detalhes, setDetalhes] = useState();
+    const dispatch = useDispatch()
 
     useEffect(()=>{
-        Pegarfilmes(setFilmes)
-    },[])
+        Pegarfilmes(setFilmes);
+        // dispatch(goToDetail())
+    },[]);
 
     return(
         <Grid to="/details">

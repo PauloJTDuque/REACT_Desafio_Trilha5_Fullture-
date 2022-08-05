@@ -8,3 +8,12 @@ export const Pegarfilmes = (setState) => {
             console.log(erro)
         })
 }
+
+export const PegarDetalhes = (id, setState) =>{
+    axios.get()
+    .then((resposta) => {
+        setState(resposta.data.results)
+    }).catch((erro) => {
+        console.log(erro)
+    })  
+}

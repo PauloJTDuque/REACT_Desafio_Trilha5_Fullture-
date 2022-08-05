@@ -1,7 +1,7 @@
 import { Footer } from "../../components/footer/Footer";
 import { Header } from "../../components/header/Header";
 import { Grid, MainContainer, RigthSide } from "./DetailsStyle";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Details() {
     return (
