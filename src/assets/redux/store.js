@@ -1,6 +1,6 @@
 
 import { configureStore } from "@reduxjs/toolkit";
-import { getDefaultMiddleware } from "@reduxjs/toolkit/dist/getDefaultMiddleware";
+import { getDefaultMiddleware } from "@reduxjs/toolkit";
 import pageReducer from "./slice"
 
 // const middleware = getDefaultMiddleware({
@@ -14,5 +14,5 @@ export const store = configureStore({
     middleware: getDefaultMiddleware => getDefaultMiddleware({
         serializableCheck: false,
     }),
-
+    // middleware: gedefault
 })
